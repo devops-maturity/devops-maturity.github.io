@@ -1,0 +1,35 @@
+@use "variables";
+
+@mixin up-to-mobile {
+  @media (max-width: #{variables.$mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{variables.$tablet-width}) and (max-width: #{variables.$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{variables.$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin gradient-primary($deg: 45deg) {
+  background: linear-gradient($deg, variables.$color-primary 0%, variables.$color-primary-light 100%);
+}
+
+@mixin dropdown-animation-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, variables.$dropdown-options-space-from-label);
+}
+
+@mixin dropdown-animation-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, 0);
+}

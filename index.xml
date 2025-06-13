@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>About The DevOps Maturity specification was inspired by Conventional Branch.&#xA;Tooling for DevOps Maturity devops-maturity: CLI tool for calculating DevOps Maturity score. Projects Using DevOps Maturity ansible/metrics-utility: Standalone utility for github.com/ansible/awx. cuhacking/2025: Flagship platform for cuHacking&amp;rsquo;s 2025 hackathon. commit-check: A free, powerful tool that enforces commit metadata, branch naming, and more. ZeusAutomacao/DFe.NET: Biblioteca em C# para emissão e impressão de NFe, NFCe, MDF-e e CT-e. &amp;hellip; and more projects using DevOps Maturity.</description>
+    </item>
+  </channel>
+</rss>

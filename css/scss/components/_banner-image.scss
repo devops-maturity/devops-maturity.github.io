@@ -1,0 +1,19 @@
+@use "./../abstracts/index";
+
+.banner-image {
+  width: 100%;
+  border-radius: index.$radius-md;
+  margin: index.$gap-lg 0;
+  box-shadow: index.$shadow-soft;
+  @include index.gradient-primary(14deg);
+
+  img.banner-image__picture {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    max-height: index.$banner-image-height;
+    object-fit: contain;
+    margin: auto;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,62 @@
+@use "./../abstracts/index";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(index.$color-neutral-dark, 0);
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font: 16px Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: index.$desktop-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: index.$gap-md;
+  padding-right: index.$gap-md;
+
+}
+
+.container.markdown-body {
+  margin: 0 auto;
+}
+
+main {
+  background-color: index.$main-background;
+}
+
+article {
+  background-color: index.$article-background;
+  transform: translateY(index.$article-offset-top);
+  padding-top: index.$gap-md;
+  padding-bottom: index.$gap-md;
+  border-radius: index.$radius-lg;
+  min-height: 50vh;
+  box-shadow: index.$shadow-soft;
+}
+
+@include index.desktop {
+  .container {
+    padding-left: index.$gap-lg;
+    padding-right: index.$gap-lg;
+  }
+
+  article {
+    padding-top: index.$gap-lg - index.$gap-sm;
+    padding-bottom: index.$gap-lg - index.$gap-sm;
+  }
+}
+
+
+.no-style-a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,35 @@
+@use "./../abstracts/index";
+
+.footer {
+  margin: (index.$article-offset-top + (index.$gap-md*3)) 0 (index.$gap-md*3);
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__license {
+    margin-right: auto;
+    a {
+      font-size: .7em;
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__logos {
+    margin-left: auto;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  .github {
+    width: index.$footer-logo-size;
+    height: index.$footer-logo-size;
+  }
+}

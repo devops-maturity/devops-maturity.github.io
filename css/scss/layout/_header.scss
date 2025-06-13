@@ -1,0 +1,64 @@
+@use "./../abstracts/index";
+
+.header {
+  position: absolute;
+  z-index: 10;
+  top: 12px;
+  left: 0;
+  width: 100%;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: index.$header-height;
+    font-size: .8em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+  }
+
+  &__menu {
+    display: flex;
+    color: index.$color-neutral-light;
+    list-style: none;
+    margin-left: index.$gap-sm * 2;
+  }
+
+  &__menu-item {
+    margin-right: index.$gap-sm;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@include index.up-to-mobile {
+  .header {
+    .container {
+      align-items: flex-start;
+      height: auto;
+      margin-top: index.$gap-sm;
+    }
+
+
+    &__menu {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-top: index.$gap-sm * -1;
+    }
+
+    &__menu-item {
+      margin-right: 0;
+    }
+  }
+}

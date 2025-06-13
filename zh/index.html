@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html><head>
+	<meta name="generator" content="Hugo 0.128.0">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH9YBHW509"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RH9YBHW509');
+  </script>
+  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>DevOps 成熟度</title>
+  <meta name="description" content="DevOps 成熟度评估"/>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+  
+  <meta name="twitter:card" content="DevOps 成熟度评估">
+  <meta name="twitter:title" content="DevOps 成熟度">
+  <meta name="twitter:description" content="DevOps 成熟度评估">
+
+  
+  <meta property="og:title" content="DevOps 成熟度"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="/zh/"/>
+  <meta property="og:description" content="DevOps 成熟度评估"/>
+  <meta property="og:site_name" content="DevOps 成熟度"/>
+</head>
+<body class="devops-maturity--loading"><header class="header">
+  <div class="container">
+    <a href="/">
+      <div class="logo"></div>
+    </a>
+    <ul class="header__menu">
+      
+        
+      
+      <li class="header__menu-item dropdown">
+        <button class="dropdown__label">Languages</button>
+        <ul class="dropdown__options">
+          
+          <li class="dropdown__option"><a href="/">English</a></li>
+          
+          <li class="dropdown__option"><a href="/zh/">中文</a></li>
+          
+        </ul>
+      </li>
+      <li class="header__menu-item dropdown">
+        <button class="dropdown__label">
+          <a href="/about" class="no-style-a">About</a>
+        </button>
+      </li>
+    </ul>
+  </div>
+</header>
+<section class="welcome">
+  <div class="container">
+    <h1 class="welcome__title">DevOps 成熟度</h1>
+    <p class="welcome__description">DevOps 成熟度评估</p>
+    
+    <div class="welcome__actions">
+      
+      <a class="welcome__action" href="#%e6%a6%82%e8%bf%b0">概述</a>
+      
+      <a class="welcome__action" href="#%e8%a7%84%e8%8c%83">完整规范</a>
+      
+      <a class="welcome__action" href="https://github.com/devops-maturity/specification">贡献</a>
+      
+    </div>
+    
+    <figure class="welcome__image">
+      <img src='/img/logo.png'>
+    </figure>
+  </div>
+</section>
+<main>
+  <article class="container markdown-body">
+    <h1 id="devops-成熟度规范">DevOps 成熟度规范</h1>
+<h2 id="概述">概述</h2>
+<p>DevOps 成熟度规范是一套 DevOps 最佳实践指南，旨在提升软件开发与运维的协作、自动化和效率。</p>
+<h2 id="规范">规范</h2>
+<h3 id="devops-成熟度评估标准">DevOps 成熟度评估标准</h3>
+<p>必选 → 🟢  可选 → 🟡</p>
+<table>
+<thead>
+<tr>
+<th><strong>类别</strong></th>
+<th><strong>评估项</strong></th>
+<th><strong>要求</strong></th>
+<th><strong>权重</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CI/CD 基础</td>
+<td>构建指定分支</td>
+<td>🟢</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>Pull Request 自动构建</td>
+<td>🟢</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>干净环境构建</td>
+<td>🟡</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>质量保障</td>
+<td>自动化测试：功能测试</td>
+<td>🟢</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>自动化测试：性能测试</td>
+<td>🟢</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>代码覆盖率</td>
+<td>🟡</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td></td>
+<td>可访问性测试</td>
+<td>🟡</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>安全</td>
+<td>安全扫描</td>
+<td>🟢</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>许可证扫描</td>
+<td>🟡</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>供应链安全</td>
+<td>构建链文档化</td>
+<td>🟢</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>CICD 流水线代码化</td>
+<td>🟢</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>制品签名</td>
+<td>🟡</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td></td>
+<td>包管理器制品下载</td>
+<td>🟡</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>分析</td>
+<td>质量门禁</td>
+<td>🟡</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td></td>
+<td>代码风格检查</td>
+<td>🟡</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td></td>
+<td>静态代码分析</td>
+<td>🟡</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td></td>
+<td>动态代码分析</td>
+<td>🟡</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>报告</td>
+<td>邮件/Slack 报告功能</td>
+<td>🟢</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="徽章等级">徽章等级</h2>
+<p>你的得分将获得以下徽章之一：</p>
+<ul>
+<li>WIP: 0%</li>
+<li>PASSING: 1–49%</li>
+<li>BRONZE: 50–69%</li>
+<li>SILVER: 70–89%</li>
+<li>GOLD: 90–100%</li>
+</ul>
+<h2 id="常见问题">常见问题</h2>
+<h3 id="如何计算得分">如何计算得分？</h3>
+<p>您可以使用 <a href="https://pypi.org/project/devops-maturity">devops-maturity</a> CLI 工具自动计算得分。</p>
+
+  </article>
+</main><footer class="footer">
+  <div class="container">
+    
+    <div class="footer__license">
+      
+      <p>License</p>
+      
+      
+      <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons - CC BY 3.0</a>
+      
+    </div>
+    
+    
+    <div class="footer__logos">
+      
+      
+      <a class="footer__logo" href="https://github.com/devops-maturity/specification"><svg class="github" viewBox="0 0 128 128">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path>
+  <path
+    d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm-.743-.55M28.93 94.535c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zm-.575-.618M31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm0 0M34.573 101.373c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm0 0M39.073 103.324c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm0 0M44.016 103.685c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm0 0M48.614 102.903c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path>
+</svg>
+</a>
+      
+      
+    </div>
+  </div>
+</footer>
+<script src="/js/bundle.js"></script>
+</body>
+</html>
