@@ -13,21 +13,21 @@
   
   <link rel="stylesheet" href="/css/style.css">
 
-  <title>DevOps Maturity</title>
-  <meta name="description" content="DevOps Maturity Specification — assess, improve, and showcase your DevOps maturity."/>
+  <title>DevOps Maturity Specification</title>
+  <meta name="description" content="Assess, improve, and showcase your DevOps maturity — across teams and organizations."/>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no">
 
   
-  <meta name="twitter:card" content="DevOps Maturity Specification — assess, improve, and showcase your DevOps maturity.">
-  <meta name="twitter:title" content="DevOps Maturity">
-  <meta name="twitter:description" content="DevOps Maturity Specification — assess, improve, and showcase your DevOps maturity.">
+  <meta name="twitter:card" content="Assess, improve, and showcase your DevOps maturity — across teams and organizations.">
+  <meta name="twitter:title" content="DevOps Maturity Specification">
+  <meta name="twitter:description" content="Assess, improve, and showcase your DevOps maturity — across teams and organizations.">
 
   
-  <meta property="og:title" content="DevOps Maturity"/>
+  <meta property="og:title" content="DevOps Maturity Specification"/>
   <meta property="og:type" content="article"/>
   <meta property="og:url" content="/"/>
-  <meta property="og:description" content="DevOps Maturity Specification — assess, improve, and showcase your DevOps maturity."/>
-  <meta property="og:site_name" content="DevOps Maturity"/>
+  <meta property="og:description" content="Assess, improve, and showcase your DevOps maturity — across teams and organizations."/>
+  <meta property="og:site_name" content="DevOps Maturity Specification"/>
 </head>
 <body class="devops-maturity--loading"><header class="header">
   <div class="container">
@@ -58,8 +58,8 @@
 </header>
 <section class="welcome">
   <div class="container">
-    <h1 class="welcome__title">DevOps Maturity</h1>
-    <p class="welcome__description">DevOps Maturity Specification — assess, improve, and showcase your DevOps maturity.</p>
+    <h1 class="welcome__title">DevOps Maturity Specification</h1>
+    <p class="welcome__description">Assess, improve, and showcase your DevOps maturity — across teams and organizations.</p>
     
     <div class="welcome__actions">
       
@@ -80,8 +80,9 @@
   <article class="container markdown-body">
     <h1 id="devops-maturity-specification-100">DevOps Maturity Specification 1.0.0</h1>
 <h2 id="summary">Summary</h2>
-<p>DevOps Maturity Specification provides guidelines for DevOps best practices, aiming to enhance collaboration, automation, and efficiency across software development and operations.</p>
-<h2 id="key-points">Key Points</h2>
+<h3 id="what-is-the-devops-maturity-specification">What is the DevOps Maturity Specification?</h3>
+<p>The DevOps Maturity Specification is a set of guidelines and criteria designed to help organizations assess and improve their DevOps practices. It provides a structured approach to evaluate key areas such as Basics, Quality, Security, Supply Chain Security, Analysis, and Reporting. The specification is intended to align with best practices and provide a framework for continuous improvement within the DevOps community.</p>
+<h3 id="key-points">Key Points</h3>
 <ul>
 <li><strong>Purpose</strong>: Help organizations and teams assess DevOps practices, align on best practices, and drive continuous improvement.</li>
 <li><strong>Scope</strong>: Covers key DevOps domains including build, testing, security, supply chain, analysis, and reporting.</li>
@@ -95,133 +96,129 @@
 <thead>
 <tr>
 <th><strong>Category</strong></th>
-<th><strong>Code</strong></th>
-<th><strong>Criteria</strong></th>
-<th><strong>Req.</strong></th>
+<th><strong>Code</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></th>
+<th><strong>Criteria</strong><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></th>
+<th><strong>Req.</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Basics</td>
 <td>D101</td>
-<td><a href="/#d101-branch-builds">Branch Builds</a></td>
+<td>Branch Builds</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D102</td>
-<td><a href="/#d102-pull-request-builds">Pull Request Builds</a></td>
+<td>Pull Request Builds</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D103</td>
-<td><a href="/#d103-clean-build-environments">Clean Build Environments</a></td>
+<td>Clean Build Environments</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td>Quality</td>
 <td>D201</td>
-<td><a href="/#d201-unit-testing">Unit Testing</a></td>
+<td>Unit Testing</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D202</td>
-<td><a href="/#d202-functional-testing">Functional Testing</a></td>
+<td>Functional Testing</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D203</td>
-<td><a href="/#d203-performance-testing">Performance Testing</a></td>
+<td>Performance Testing</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td></td>
 <td>D204</td>
-<td><a href="/#d204-code-coverage">Code Coverage</a></td>
+<td>Code Coverage</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td></td>
 <td>D205</td>
-<td><a href="/#d205-accessibility-testing">Accessibility Testing</a></td>
+<td>Accessibility Testing</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td>Security</td>
 <td>D301</td>
-<td><a href="/#d301-security-scanning">Security Scanning</a></td>
+<td>Security Scanning</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D302</td>
-<td><a href="/#d302-license-scanning">License Scanning</a></td>
+<td>License Scanning</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td>Supply Chain Security</td>
 <td>D401</td>
-<td><a href="/#d401-documented-build-process">Documented Build Process</a></td>
+<td>Documented Build Process</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D402</td>
-<td><a href="/#d402-ci-cd-as-code">CI/CD as Code</a></td>
+<td>CI/CD as Code</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D403</td>
-<td><a href="/#d403-artifact-signing">Artifact Signing</a></td>
+<td>Artifact Signing</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td></td>
 <td>D404</td>
-<td><a href="/#d404-dependency-pinning">Dependency Pinning</a></td>
+<td>Dependency Pinning</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td>Analysis</td>
 <td>D501</td>
-<td><a href="/#d501-static-code-analysis">Static Code Analysis</a></td>
+<td>Static Code Analysis</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td></td>
 <td>D502</td>
-<td><a href="/#d502-dynamic-code-analysis">Dynamic Code Analysis</a></td>
+<td>Dynamic Code Analysis</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td></td>
 <td>D503</td>
-<td><a href="/#d503-code-linting">Code Linting</a></td>
+<td>Code Linting</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td>Reporting</td>
 <td>D601</td>
-<td><a href="/#d601-notifications--alerts">Notifications &amp; Alerts</a></td>
+<td>Notifications &amp; Alerts</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D602</td>
-<td><a href="/#d602-attached-reports">Attached Reports</a></td>
+<td>Attached Reports</td>
 <td>🟡</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>🟢 Must-Have (Weight: 1)</li>
-<li>🟡 Nice-to-Have (Weight: 0.5)</li>
-</ul>
-<p><em>Proposed a new criterion?</em> Please <a href="https://github.com/devops-maturity/spec/issues">open an issue</a>.</p>
+<p><em>Proposed a new criteria?</em> Please <a href="https://github.com/devops-maturity/spec/issues">open an issue</a>.</p>
 <h2 id="badge-levels">Badge Levels</h2>
 <p>Your score will generate one of the following badges:</p>
 <table>
@@ -307,50 +304,149 @@
 </li>
 </ul>
 <h2 id="criteria-details">Criteria Details</h2>
-<h4 id="d101-branch-builds">D101 Branch Builds</h4>
-<p>Supports builds from any specific branch, not just the <code>main</code> branch.</p>
-<h4 id="d102-pull-request-builds">D102 Pull Request Builds</h4>
-<p>Supports building pull requests (PRs), not limited to direct pushes to branches.</p>
-<h4 id="d103-clean-build-environments">D103 Clean Build Environments</h4>
-<p>Supports building in clean environments, such as containers or virtual machines (VMs).</p>
-<h4 id="d201-unit-testing">D201 Unit Testing</h4>
-<p>Supports unit testing, including unit or component-level tests.</p>
-<h4 id="d202-functional-testing">D202 Functional Testing</h4>
-<p>Supports functional testing, such as integration or end-to-end (E2E) tests.</p>
-<h4 id="d203-performance-testing">D203 Performance Testing</h4>
-<p>Supports performance testing, including load, stress, or throughput testing.</p>
-<h4 id="d204-code-coverage">D204 Code Coverage</h4>
-<p>Supports measuring code coverage, including line, branch, or function coverage.</p>
-<h4 id="d205-accessibility-testing">D205 Accessibility Testing</h4>
-<p>Supports accessibility testing for standards compliance, such as WCAG.</p>
-<h4 id="d301-security-scanning">D301 Security Scanning</h4>
-<p>Supports security scanning, including SAST (Static Application Security Testing) and DAST (Dynamic Application Security Testing).</p>
-<h4 id="d302-license-scanning">D302 License Scanning</h4>
-<p>Supports license scanning using tools like SPDX, FOSSology, or license-checkers.</p>
-<h4 id="d401-documented-build-process">D401 Documented Build Process</h4>
-<p>Provides a documented build process, including build steps, manifests, or reproducibility details.</p>
-<h4 id="d402-cicd-as-code">D402 CI/CD as Code</h4>
-<p>Supports CI/CD workflows defined as code, such as pipeline-as-code or infrastructure-as-code.</p>
-<h4 id="d403-artifact-signing">D403 Artifact Signing</h4>
-<p>Supports artifact signing (e.g., with PGP or GPG) to ensure authenticity and integrity.</p>
-<h4 id="d404-dependency-pinning">D404 Dependency Pinning</h4>
-<p>Supports dependency pinning or version locking to ensure reproducible builds.</p>
-<h4 id="d501-static-code-analysis">D501 Static Code Analysis</h4>
-<p>Supports static code analysis tools such as SonarQube, Polaris, or similar.</p>
-<h4 id="d502-dynamic-code-analysis">D502 Dynamic Code Analysis</h4>
-<p>Supports dynamic analysis, including runtime behavior analysis or fuzz testing.</p>
-<h4 id="d503-code-linting">D503 Code Linting</h4>
-<p>Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.</p>
-<h4 id="d601-notifications--alerts">D601 Notifications &amp; Alerts</h4>
-<p>Supports notification systems such as email or Slack alerts.</p>
-<h4 id="d602-attached-reports">D602 Attached Reports</h4>
-<p>Supports attaching detailed reports to builds, such as test results or coverage metrics.</p>
+
+<details>
+    <summary>Click to expand criteria details</summary>
+    <div><table>
+<thead>
+<tr>
+<th><strong>Code</strong></th>
+<th><strong>Criteria</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D101</td>
+<td>Branch Builds</td>
+<td>Supports builds from any specific branch, not just the <code>main</code> branch.</td>
+</tr>
+<tr>
+<td>D102</td>
+<td>Pull Request Builds</td>
+<td>Supports building pull requests (PRs), not limited to direct pushes to branches.</td>
+</tr>
+<tr>
+<td>D103</td>
+<td>Clean Build Environments</td>
+<td>Supports building in clean environments, such as containers or VMs.</td>
+</tr>
+<tr>
+<td>D201</td>
+<td>Unit Testing</td>
+<td>Supports unit testing, including unit or component-level tests.</td>
+</tr>
+<tr>
+<td>D202</td>
+<td>Functional Testing</td>
+<td>Supports functional testing, such as integration or end-to-end (E2E) tests.</td>
+</tr>
+<tr>
+<td>D203</td>
+<td>Performance Testing</td>
+<td>Supports performance testing, including load, stress, or throughput testing.</td>
+</tr>
+<tr>
+<td>D204</td>
+<td>Code Coverage</td>
+<td>Supports measuring code coverage, including line, branch, or function coverage.</td>
+</tr>
+<tr>
+<td>D205</td>
+<td>Accessibility Testing</td>
+<td>Supports accessibility testing for standards compliance, such as WCAG.</td>
+</tr>
+<tr>
+<td>D301</td>
+<td>Security Scanning</td>
+<td>Supports security scanning, including SAST and DAST.</td>
+</tr>
+<tr>
+<td>D302</td>
+<td>License Scanning</td>
+<td>Supports license scanning using tools like SPDX, FOSSology, or license-checkers.</td>
+</tr>
+<tr>
+<td>D401</td>
+<td>Documented Build Process</td>
+<td>Provides a documented build process, including build steps or reproducibility.</td>
+</tr>
+<tr>
+<td>D402</td>
+<td>CI/CD as Code</td>
+<td>Supports CI/CD workflows defined as code, such as pipeline-as-code.</td>
+</tr>
+<tr>
+<td>D403</td>
+<td>Artifact Signing</td>
+<td>Supports artifact signing to ensure authenticity and integrity.</td>
+</tr>
+<tr>
+<td>D404</td>
+<td>Dependency Pinning</td>
+<td>Supports dependency pinning or version locking for reproducible builds.</td>
+</tr>
+<tr>
+<td>D501</td>
+<td>Static Code Analysis</td>
+<td>Supports static analysis tools like SonarQube, Polaris, or similar.</td>
+</tr>
+<tr>
+<td>D502</td>
+<td>Dynamic Code Analysis</td>
+<td>Supports dynamic analysis, including runtime behavior analysis or fuzz testing.</td>
+</tr>
+<tr>
+<td>D503</td>
+<td>Code Linting</td>
+<td>Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.</td>
+</tr>
+<tr>
+<td>D601</td>
+<td>Notifications &amp; Alerts</td>
+<td>Supports notification systems such as email or Slack alerts.</td>
+</tr>
+<tr>
+<td>D602</td>
+<td>Attached Reports</td>
+<td>Supports attaching detailed reports to builds, like test results or coverage.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+
+
+
 <hr>
 <h2 id="faq">FAQ</h2>
-<h3 id="what-tools-can-be-used-to-calculate-your-score">What tools can be used to calculate your score?</h3>
-<p>You can use <a href="https://github.com/devops-maturity/devops-maturity">devops-maturity</a>, which supports web UI and CLI to calculate your score automatically.</p>
 <h3 id="what-is-the-difference-between-openssf-best-practices-and-devops-maturity">What is the difference between OpenSSF Best Practices and DevOps Maturity?</h3>
 <p><a href="https://www.bestpractices.dev/">OpenSSF Best Practices</a> targets open source projects across the entire software development lifecycle, while DevOps Maturity focuses specifically on DevOps practices applicable to both open source and internal enterprise projects. DevOps Maturity provides both a web UI and a CLI for automatic maturity scoring. In contrast, OpenSSF Best Practices only offers a web-based SaaS and does not support internal deployment.</p>
+<h3 id="what-is-the-difference-between-devops-maturity-model-and-devops-maturity-specification">What is the difference between DevOps Maturity Model and DevOps Maturity Specification?</h3>
+<p>The DevOps Maturity Model is a conceptual framework that outlines the stages of DevOps adoption and maturity, while the DevOps Maturity Specification provides a detailed, actionable set of criteria and guidelines for assessing and improving DevOps practices.</p>
+<h3 id="how-can-i-contribute-to-the-devops-maturity-specification">How can I contribute to the DevOps Maturity Specification?</h3>
+<p>You can contribute by proposing new criteria, features, or reporting bugs. Please <a href="https://github.com/devops-maturity/spec/issues">open an issue</a> or <a href="https://github.com/devops-maturity/spec/pulls">create a pull request</a> on GitHub. We welcome contributions from the community!</p>
+<h3 id="how-can-i-use-the-devops-maturity-specification-in-my-organization">How can I use the DevOps Maturity Specification in my organization?</h3>
+<p>You can integrate the DevOps Maturity Specification into your organization&rsquo;s DevOps practices by:</p>
+<ul>
+<li>Using the criteria to assess your current DevOps maturity level.</li>
+<li>Implementing the recommended criteria to improve your DevOps processes.</li>
+<li>Utilizing tools like <a href="https://github.com/devops-maturity/devops-maturity">devops-maturity</a> to calculate maturity scores and generate badges automatically.</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>A criteria ID code is a unique identifier assigned to specific criteria. For more details, see the <a href="/#code-map">Code Map</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Detailed information on each criteria can be found in the <a href="/#criteria-details">Criteria Details</a> section.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Required Levels: 🟢 Must-Have (Weight: 1), 🟡 Nice-to-Have (Weight: 0.5).&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
   </article>
 </main><footer class="footer">

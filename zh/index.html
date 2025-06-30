@@ -13,21 +13,21 @@
   
   <link rel="stylesheet" href="/css/style.css">
 
-  <title>DevOps 成熟度</title>
-  <meta name="description" content="DevOps 成熟度规范 - 评估、改进和展示你的 DevOps 成熟度。"/>
+  <title>DevOps 成熟度规范</title>
+  <meta name="description" content="评估、改进和展示你的 DevOps 成熟度 — 跨团队和组织。"/>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no">
 
   
-  <meta name="twitter:card" content="DevOps 成熟度规范 - 评估、改进和展示你的 DevOps 成熟度。">
-  <meta name="twitter:title" content="DevOps 成熟度">
-  <meta name="twitter:description" content="DevOps 成熟度规范 - 评估、改进和展示你的 DevOps 成熟度。">
+  <meta name="twitter:card" content="评估、改进和展示你的 DevOps 成熟度 — 跨团队和组织。">
+  <meta name="twitter:title" content="DevOps 成熟度规范">
+  <meta name="twitter:description" content="评估、改进和展示你的 DevOps 成熟度 — 跨团队和组织。">
 
   
-  <meta property="og:title" content="DevOps 成熟度"/>
+  <meta property="og:title" content="DevOps 成熟度规范"/>
   <meta property="og:type" content="article"/>
   <meta property="og:url" content="/zh/"/>
-  <meta property="og:description" content="DevOps 成熟度规范 - 评估、改进和展示你的 DevOps 成熟度。"/>
-  <meta property="og:site_name" content="DevOps 成熟度"/>
+  <meta property="og:description" content="评估、改进和展示你的 DevOps 成熟度 — 跨团队和组织。"/>
+  <meta property="og:site_name" content="DevOps 成熟度规范"/>
 </head>
 <body class="devops-maturity--loading"><header class="header">
   <div class="container">
@@ -58,8 +58,8 @@
 </header>
 <section class="welcome">
   <div class="container">
-    <h1 class="welcome__title">DevOps 成熟度</h1>
-    <p class="welcome__description">DevOps 成熟度规范 - 评估、改进和展示你的 DevOps 成熟度。</p>
+    <h1 class="welcome__title">DevOps 成熟度规范</h1>
+    <p class="welcome__description">评估、改进和展示你的 DevOps 成熟度 — 跨团队和组织。</p>
     
     <div class="welcome__actions">
       
@@ -96,9 +96,9 @@
 <thead>
 <tr>
 <th><strong>类别</strong></th>
-<th><strong>代码</strong></th>
-<th><strong>评估项</strong></th>
-<th><strong>要求</strong></th>
+<th><strong>代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></th>
+<th><strong>评估项</strong><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></th>
+<th><strong>要求</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></th>
 </tr>
 </thead>
 <tbody>
@@ -218,10 +218,6 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>🟢 必选（权重 1）</li>
-<li>🟡 可选（权重 0.5）</li>
-</ul>
 <p><em>提出新的评估项？</em> 请<a href="https://github.com/devops-maturity/spec/issues">提交 issue</a>。</p>
 <h2 id="徽章等级">徽章等级</h2>
 <p>你的得分将获得以下徽章之一：</p>
@@ -307,50 +303,151 @@
 </li>
 </ul>
 <h2 id="评估项详情">评估项详情</h2>
-<h4 id="d101-分支构建">D101 分支构建</h4>
-<p>支持从任意指定分支进行构建，而不仅限于 <code>main</code> 分支。</p>
-<h4 id="d102-pr-构建">D102 PR 构建</h4>
-<p>支持对 Pull Request（PR）进行构建，不仅限于直接推送到分支。</p>
-<h4 id="d103-干净环境构建">D103 干净环境构建</h4>
-<p>支持在干净环境（如容器或虚拟机）中进行构建。</p>
-<h4 id="d201-单元测试">D201 单元测试</h4>
-<p>支持单元测试，包括单元或组件级测试。</p>
-<h4 id="d202-功能测试">D202 功能测试</h4>
-<p>支持功能测试，如集成测试或端到端（E2E）测试。</p>
-<h4 id="d203-性能测试">D203 性能测试</h4>
-<p>支持性能测试，包括负载、压力或吞吐量测试。</p>
-<h4 id="d204-代码覆盖率">D204 代码覆盖率</h4>
-<p>支持代码覆盖率测量，包括行、分支或函数覆盖率。</p>
-<h4 id="d205-可访问性测试">D205 可访问性测试</h4>
-<p>支持可访问性测试，符合如 WCAG 等标准。</p>
-<h4 id="d301-安全扫描">D301 安全扫描</h4>
-<p>支持安全扫描，包括 SAST（静态应用安全测试）和 DAST（动态应用安全测试）。</p>
-<h4 id="d302-许可证扫描">D302 许可证扫描</h4>
-<p>支持许可证扫描，如 SPDX、FOSSology 或 license-checkers 等工具。</p>
-<h4 id="d401-构建过程文档化">D401 构建过程文档化</h4>
-<p>提供构建过程文档，包括构建步骤、清单或可复现性说明。</p>
-<h4 id="d402-cicd-代码化">D402 CI/CD 代码化</h4>
-<p>支持以代码形式定义 CI/CD 工作流，如流水线即代码或基础设施即代码。</p>
-<h4 id="d403-制品签名">D403 制品签名</h4>
-<p>支持制品签名（如 PGP 或 GPG），确保真实性和完整性。</p>
-<h4 id="d404-依赖锁定">D404 依赖锁定</h4>
-<p>支持依赖锁定或版本固定，确保可复现构建。</p>
-<h4 id="d501-静态代码分析">D501 静态代码分析</h4>
-<p>支持静态代码分析工具，如 SonarQube、Polaris 等。</p>
-<h4 id="d502-动态代码分析">D502 动态代码分析</h4>
-<p>支持动态分析，包括运行时行为分析或模糊测试。</p>
-<h4 id="d503-代码风格检查">D503 代码风格检查</h4>
-<p>支持代码风格检查，如 ESLint、Prettier 或 pre-commit 钩子。</p>
-<h4 id="d601-通知与告警">D601 通知与告警</h4>
-<p>支持通知系统，如邮件或 Slack 告警。</p>
-<h4 id="d602-附加报告">D602 附加报告</h4>
-<p>支持将详细报告附加到构建，如测试结果或覆盖率指标。</p>
+
+<details>
+    <summary>点击展开评估项详情</summary>
+    <div><table>
+<thead>
+<tr>
+<th><strong>ID</strong></th>
+<th><strong>评估项</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D101</td>
+<td>分支构建</td>
+<td>支持从任意指定分支进行构建，而不仅限于 <code>main</code> 分支。</td>
+</tr>
+<tr>
+<td>D102</td>
+<td>PR 构建</td>
+<td>支持对 Pull Request（PR）进行构建，不仅限于直接推送到分支。</td>
+</tr>
+<tr>
+<td>D103</td>
+<td>干净环境构建</td>
+<td>支持在干净环境（如容器或虚拟机）中进行构建。</td>
+</tr>
+<tr>
+<td>D201</td>
+<td>单元测试</td>
+<td>支持单元测试，包括单元或组件级测试。</td>
+</tr>
+<tr>
+<td>D202</td>
+<td>功能测试</td>
+<td>支持功能测试，如集成测试或端到端（E2E）测试。</td>
+</tr>
+<tr>
+<td>D203</td>
+<td>性能测试</td>
+<td>支持性能测试，包括负载、压力或吞吐量测试。</td>
+</tr>
+<tr>
+<td>D204</td>
+<td>代码覆盖率</td>
+<td>支持代码覆盖率测量，包括行、分支或函数覆盖率。</td>
+</tr>
+<tr>
+<td>D205</td>
+<td>可访问性测试</td>
+<td>支持可访问性测试，符合如 WCAG 等标准。</td>
+</tr>
+<tr>
+<td>D301</td>
+<td>安全扫描</td>
+<td>支持安全扫描，包括 SAST 和 DAST。</td>
+</tr>
+<tr>
+<td>D302</td>
+<td>许可证扫描</td>
+<td>支持许可证扫描，如 SPDX、FOSSology 或 license-checkers 等工具。</td>
+</tr>
+<tr>
+<td>D401</td>
+<td>构建过程文档化</td>
+<td>提供构建过程文档，包括构建步骤、清单或可复现性说明。</td>
+</tr>
+<tr>
+<td>D402</td>
+<td>CI/CD 代码化</td>
+<td>支持以代码形式定义 CI/CD 工作流，如流水线即代码或基础设施即代码。</td>
+</tr>
+<tr>
+<td>D403</td>
+<td>制品签名</td>
+<td>支持制品签名（如 PGP 或 GPG），确保真实性和完整性。</td>
+</tr>
+<tr>
+<td>D404</td>
+<td>依赖锁定</td>
+<td>支持依赖锁定或版本固定，确保可复现构建。</td>
+</tr>
+<tr>
+<td>D501</td>
+<td>静态代码分析</td>
+<td>支持静态代码分析工具，如 SonarQube、Polaris 等。</td>
+</tr>
+<tr>
+<td>D502</td>
+<td>动态代码分析</td>
+<td>支持动态分析，包括运行时行为分析或模糊测试。</td>
+</tr>
+<tr>
+<td>D503</td>
+<td>代码风格检查</td>
+<td>支持代码风格检查，如 ESLint、Prettier 或 pre-commit 钩子。</td>
+</tr>
+<tr>
+<td>D601</td>
+<td>通知与告警</td>
+<td>支持通知系统，如邮件或 Slack 告警。</td>
+</tr>
+<tr>
+<td>D602</td>
+<td>附加报告</td>
+<td>支持将详细报告附加到构建，如测试结果或覆盖率指标。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+
+
+
 <hr>
 <h2 id="常见问题解答">常见问题解答</h2>
 <h3 id="如何自动计算成熟度得分">如何自动计算成熟度得分？</h3>
 <p>你可以使用 <a href="https://github.com/devops-maturity/devops-maturity">devops-maturity</a>，该工具支持 Web UI 和 CLI，可自动计算你的成熟度得分。</p>
 <h3 id="openssf-best-practices-和-devops-maturity-有什么区别">OpenSSF Best Practices 和 DevOps Maturity 有什么区别？</h3>
 <p><a href="https://www.bestpractices.dev/">OpenSSF Best Practices</a> 面向整个软件开发生命周期的开源项目，而 DevOps Maturity 专注于适用于开源和企业内部项目的 DevOps 实践。DevOps Maturity 提供 Web UI 和 CLI 两种自动化成熟度评分方式，而 OpenSSF Best Practices 仅提供基于 Web 的 SaaS 服务，不支持内部部署。</p>
+<h3 id="devops-maturity-model-和-devops-maturity-specification-有什么区别">DevOps Maturity Model 和 DevOps Maturity Specification 有什么区别？</h3>
+<p>DevOps Maturity Model 是一个概念框架，描述了 DevOps 采纳和成熟度的各个阶段，而 DevOps Maturity Specification 提供了详细、可操作的评估标准和指南，用于评估和改进 DevOps 实践。</p>
+<h3 id="如何为-devops-maturity-specification-做出贡献">如何为 DevOps Maturity Specification 做出贡献？</h3>
+<p>你可以通过提出新的评估标准、功能建议或报告问题来参与贡献。欢迎在 GitHub 上 <a href="https://github.com/devops-maturity/spec/issues">提交 Issue</a> 或 <a href="https://github.com/devops-maturity/spec/pulls">创建 Pull Request</a>。我们非常欢迎来自社区的参与！</p>
+<h3 id="如何在组织中应用-devops-maturity-specification">如何在组织中应用 DevOps Maturity Specification？</h3>
+<p>你可以通过以下方式将 DevOps Maturity Specification 融入组织的 DevOps 实践中：</p>
+<ul>
+<li>使用各项评估标准来衡量当前的 DevOps 成熟度水平。</li>
+<li>按照推荐的标准逐步改进 DevOps 流程。</li>
+<li>使用如 <a href="https://github.com/devops-maturity/devops-maturity">devops-maturity</a> 这样的工具，自动计算成熟度得分并生成徽章。</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>评估项 ID 代码是分配给特定评估项的唯一标识符。更多详情见<a href="/zh/#评估项代码说明">代码说明</a>。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>每个评估项的详细信息可在<a href="/zh/#评估项详情">评估项详情</a>部分找到。&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>要求等级：🟢 必选（权重：1），🟡 可选（权重：0.5）。&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
   </article>
 </main><footer class="footer">
