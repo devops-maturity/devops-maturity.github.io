@@ -187,6 +187,12 @@
 <td>🟡</td>
 </tr>
 <tr>
+<td></td>
+<td>D405</td>
+<td>SBOM Generation</td>
+<td>🟡</td>
+</tr>
+<tr>
 <td>Analysis</td>
 <td>D501</td>
 <td>Static Code Analysis</td>
@@ -214,6 +220,12 @@
 <td></td>
 <td>D602</td>
 <td>Attached Reports</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td></td>
+<td>D603</td>
+<td>Compliance Mapping &amp; Auditability</td>
 <td>🟡</td>
 </tr>
 </tbody>
@@ -369,47 +381,57 @@
 <tr>
 <td>D401</td>
 <td>Documented Build Process</td>
-<td>Provides a documented build process, including build steps or reproducibility.</td>
+<td>CI/CD build steps are version-controlled and documented.</td>
 </tr>
 <tr>
 <td>D402</td>
 <td>CI/CD as Code</td>
-<td>Supports CI/CD workflows defined as code, such as pipeline-as-code.</td>
+<td>Pipelines and infrastructure are defined as code (IaC, PaC).</td>
 </tr>
 <tr>
 <td>D403</td>
 <td>Artifact Signing</td>
-<td>Supports artifact signing to ensure authenticity and integrity.</td>
+<td>Build artifacts are cryptographically signed.</td>
 </tr>
 <tr>
 <td>D404</td>
 <td>Dependency Pinning</td>
-<td>Supports dependency pinning or version locking for reproducible builds.</td>
+<td>All dependencies are pinned to exact versions.</td>
+</tr>
+<tr>
+<td>D405</td>
+<td>SBOM Generation</td>
+<td>Automatically generate and manage Software Bill of Materials (SBOMs) using SPDX or CycloneDX.</td>
 </tr>
 <tr>
 <td>D501</td>
 <td>Static Code Analysis</td>
-<td>Supports static analysis tools like SonarQube, Polaris, or similar.</td>
+<td>Analyze code for vulnerabilities and bugs without executing it.</td>
 </tr>
 <tr>
 <td>D502</td>
 <td>Dynamic Code Analysis</td>
-<td>Supports dynamic analysis, including runtime behavior analysis or fuzz testing.</td>
+<td>Execute code in test environments to find runtime issues.</td>
 </tr>
 <tr>
 <td>D503</td>
 <td>Code Linting</td>
-<td>Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.</td>
+<td>Enforce code style and formatting rules.</td>
 </tr>
 <tr>
 <td>D601</td>
 <td>Notifications &amp; Alerts</td>
-<td>Supports notification systems such as email or Slack alerts.</td>
+<td>Notify stakeholders on key CI/CD events.</td>
 </tr>
 <tr>
 <td>D602</td>
 <td>Attached Reports</td>
-<td>Supports attaching detailed reports to builds, like test results or coverage.</td>
+<td>CI/CD runs produce and attach structured test and analysis reports.</td>
+</tr>
+<tr>
+<td>D603</td>
+<td>Compliance Mapping &amp; Auditability</td>
+<td>Map controls to standards (e.g., SLSA, NIST, ISO 20243) and provide audit-ready reports.</td>
 </tr>
 </tbody>
 </table>
