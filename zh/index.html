@@ -78,9 +78,10 @@
 </section>
 <main>
   <article class="container markdown-body">
-    <h1 id="devops-成熟度规范">DevOps 成熟度规范</h1>
+    <h1 id="devops-成熟度规范-100">DevOps 成熟度规范 1.0.0</h1>
 <h2 id="概述">概述</h2>
-<p>DevOps 成熟度规范为 DevOps 最佳实践提供指导，旨在提升软件开发与运维过程中的协作、自动化和效率。</p>
+<h3 id="什么是-devops-成熟度规范">什么是 DevOps 成熟度规范？</h3>
+<p>DevOps 成熟度规范是一套用于帮助组织评估和改进 DevOps 实践的指南和标准。它通过结构化的方法，覆盖基础、质量、安全、供应链安全、分析和报告等关键领域，旨在对齐最佳实践，并为 DevOps 社区持续改进提供框架。</p>
 <h2 id="关键要点">关键要点</h2>
 <ul>
 <li><strong>目标</strong>：帮助组织和团队评估 DevOps 实践，对齐最佳实践，并推动持续改进。</li>
@@ -91,7 +92,6 @@
 </ul>
 <hr>
 <h2 id="规范">规范</h2>
-<h3 id="devops-成熟度评估标准">DevOps 成熟度评估标准</h3>
 <table>
 <thead>
 <tr>
@@ -105,116 +105,128 @@
 <tr>
 <td>基础</td>
 <td>D101</td>
-<td><a href="/zh/#d101-分支构建">分支构建</a></td>
+<td>分支构建</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D102</td>
-<td><a href="/zh/#d102-pr-构建">PR 构建</a></td>
+<td>PR 构建</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D103</td>
-<td><a href="/zh/#d103-干净环境构建">干净环境构建</a></td>
+<td>干净环境构建</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td>质量</td>
 <td>D201</td>
-<td><a href="/zh/#d201-单元测试">单元测试</a></td>
+<td>单元测试</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D202</td>
-<td><a href="/zh/#d202-功能测试">功能测试</a></td>
+<td>功能测试</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D203</td>
-<td><a href="/zh/#d203-性能测试">性能测试</a></td>
+<td>性能测试</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td></td>
 <td>D204</td>
-<td><a href="/zh/#d204-代码覆盖率">代码覆盖率</a></td>
+<td>代码覆盖率</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td></td>
 <td>D205</td>
-<td><a href="/zh/#d205-可访问性测试">可访问性测试</a></td>
+<td>可访问性测试</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td>安全</td>
 <td>D301</td>
-<td><a href="/zh/#d301-安全扫描">安全扫描</a></td>
+<td>漏洞扫描</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D302</td>
-<td><a href="/zh/#d302-许可证扫描">许可证扫描</a></td>
+<td>许可证扫描</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td>供应链安全</td>
 <td>D401</td>
-<td><a href="/zh/#d401-构建过程文档化">构建过程文档化</a></td>
+<td>构建过程文档化</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D402</td>
-<td><a href="/zh/#d402-ci-cd-代码化">CI/CD 代码化</a></td>
+<td>CI/CD 代码化</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D403</td>
-<td><a href="/zh/#d403-制品签名">制品签名</a></td>
+<td>制品签名</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td></td>
 <td>D404</td>
-<td><a href="/zh/#d404-依赖锁定">依赖锁定</a></td>
+<td>依赖锁定</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td></td>
+<td>D405</td>
+<td>SBOM 生成</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td>分析</td>
 <td>D501</td>
-<td><a href="/zh/#d501-静态代码分析">静态代码分析</a></td>
+<td>静态代码分析</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td></td>
 <td>D502</td>
-<td><a href="/zh/#d502-动态代码分析">动态代码分析</a></td>
+<td>动态代码分析</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td></td>
 <td>D503</td>
-<td><a href="/zh/#d503-代码风格检查">代码风格检查</a></td>
+<td>代码风格检查</td>
 <td>🟡</td>
 </tr>
 <tr>
 <td>报告</td>
 <td>D601</td>
-<td><a href="/zh/#d601-通知与告警">通知与告警</a></td>
+<td>通知与告警</td>
 <td>🟢</td>
 </tr>
 <tr>
 <td></td>
 <td>D602</td>
-<td><a href="/zh/#d602-附加报告">附加报告</a></td>
-<td>🟢</td>
+<td>附加报告</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td></td>
+<td>D603</td>
+<td>合规映射与可审计性</td>
+<td>🟡</td>
 </tr>
 </tbody>
 </table>
@@ -323,92 +335,102 @@
 <tr>
 <td>D102</td>
 <td>PR 构建</td>
-<td>支持对 Pull Request（PR）进行构建，不仅限于直接推送到分支。</td>
+<td>支持对 Pull Request（PR）进行自动构建，可在合并前进行验证。</td>
 </tr>
 <tr>
 <td>D103</td>
 <td>干净环境构建</td>
-<td>支持在干净环境（如容器或虚拟机）中进行构建。</td>
+<td>确保构建在隔离且可复现的环境（如容器或虚拟机）中运行，避免受前次运行影响。</td>
 </tr>
 <tr>
 <td>D201</td>
 <td>单元测试</td>
-<td>支持单元测试，包括单元或组件级测试。</td>
+<td>支持执行单元或组件级测试，验证各独立功能或模块。</td>
 </tr>
 <tr>
 <td>D202</td>
 <td>功能测试</td>
-<td>支持功能测试，如集成测试或端到端（E2E）测试。</td>
+<td>支持运行功能、集成或端到端（E2E）测试，验证系统行为和交互。</td>
 </tr>
 <tr>
 <td>D203</td>
 <td>性能测试</td>
-<td>支持性能测试，包括负载、压力或吞吐量测试。</td>
+<td>支持负载、压力和可扩展性测试，评估系统在高压下的响应和稳定性。</td>
 </tr>
 <tr>
 <td>D204</td>
 <td>代码覆盖率</td>
-<td>支持代码覆盖率测量，包括行、分支或函数覆盖率。</td>
+<td>支持测试覆盖率测量，包括行、分支和函数覆盖率等指标，用于评估测试有效性。</td>
 </tr>
 <tr>
 <td>D205</td>
 <td>可访问性测试</td>
-<td>支持可访问性测试，符合如 WCAG 等标准。</td>
+<td>支持符合如 WCAG 等标准的可访问性测试，确保残障人士可用性。</td>
 </tr>
 <tr>
 <td>D301</td>
-<td>安全扫描</td>
-<td>支持安全扫描，包括 SAST 和 DAST。</td>
+<td>漏洞扫描</td>
+<td>使用 Snyk、Trivy 或 SonarQube 等工具对源代码、容器或基础设施进行已知安全漏洞扫描。</td>
 </tr>
 <tr>
 <td>D302</td>
 <td>许可证扫描</td>
-<td>支持许可证扫描，如 SPDX、FOSSology 或 license-checkers 等工具。</td>
+<td>检查开源依赖的许可证合规性和法律风险，避免未授权或不兼容的使用。</td>
 </tr>
 <tr>
 <td>D401</td>
 <td>构建过程文档化</td>
-<td>提供构建过程文档，包括构建步骤、清单或可复现性说明。</td>
+<td>CI/CD 构建步骤实现版本控制并有文档说明。</td>
 </tr>
 <tr>
 <td>D402</td>
 <td>CI/CD 代码化</td>
-<td>支持以代码形式定义 CI/CD 工作流，如流水线即代码或基础设施即代码。</td>
+<td>流水线和基础设施以代码形式定义（IaC、PaC）。</td>
 </tr>
 <tr>
 <td>D403</td>
 <td>制品签名</td>
-<td>支持制品签名（如 PGP 或 GPG），确保真实性和完整性。</td>
+<td>构建产物进行加密签名，确保真实性和完整性。</td>
 </tr>
 <tr>
 <td>D404</td>
 <td>依赖锁定</td>
-<td>支持依赖锁定或版本固定，确保可复现构建。</td>
+<td>所有依赖均锁定为精确版本，确保可复现构建。</td>
+</tr>
+<tr>
+<td>D405</td>
+<td>SBOM 生成</td>
+<td>自动生成并管理软件材料清单（SBOM），如 SPDX 或 CycloneDX 格式。</td>
 </tr>
 <tr>
 <td>D501</td>
 <td>静态代码分析</td>
-<td>支持静态代码分析工具，如 SonarQube、Polaris 等。</td>
+<td>使用 SonarQube、Polaris 等工具进行静态分析，检测代码缺陷和安全隐患。</td>
 </tr>
 <tr>
 <td>D502</td>
 <td>动态代码分析</td>
-<td>支持动态分析，包括运行时行为分析或模糊测试。</td>
+<td>在测试环境下运行应用，检测运行时漏洞、内存泄漏或行为异常。</td>
 </tr>
 <tr>
 <td>D503</td>
 <td>代码风格检查</td>
-<td>支持代码风格检查，如 ESLint、Prettier 或 pre-commit 钩子。</td>
+<td>使用 ESLint、Prettier 或 pre-commit 钩子检查代码风格和一致性。</td>
 </tr>
 <tr>
 <td>D601</td>
 <td>通知与告警</td>
-<td>支持通知系统，如邮件或 Slack 告警。</td>
+<td>在关键 CI/CD 事件时通知相关人员，如邮件或 Slack。</td>
 </tr>
 <tr>
 <td>D602</td>
 <td>附加报告</td>
-<td>支持将详细报告附加到构建，如测试结果或覆盖率指标。</td>
+<td>CI/CD 运行生成并附加结构化测试和分析报告。</td>
+</tr>
+<tr>
+<td>D603</td>
+<td>合规映射与可审计性</td>
+<td>映射控制到合规标准（如 SLSA、NIST、ISO 20243），并生成可审计报告。</td>
 </tr>
 </tbody>
 </table>
@@ -419,8 +441,6 @@
 
 <hr>
 <h2 id="常见问题解答">常见问题解答</h2>
-<h3 id="如何自动计算成熟度得分">如何自动计算成熟度得分？</h3>
-<p>你可以使用 <a href="https://github.com/devops-maturity/devops-maturity">devops-maturity</a>，该工具支持 Web UI 和 CLI，可自动计算你的成熟度得分。</p>
 <h3 id="openssf-best-practices-和-devops-maturity-有什么区别">OpenSSF Best Practices 和 DevOps Maturity 有什么区别？</h3>
 <p><a href="https://www.bestpractices.dev/">OpenSSF Best Practices</a> 面向整个软件开发生命周期的开源项目，而 DevOps Maturity 专注于适用于开源和企业内部项目的 DevOps 实践。DevOps Maturity 提供 Web UI 和 CLI 两种自动化成熟度评分方式，而 OpenSSF Best Practices 仅提供基于 Web 的 SaaS 服务，不支持内部部署。</p>
 <h3 id="devops-maturity-model-和-devops-maturity-specification-有什么区别">DevOps Maturity Model 和 DevOps Maturity Specification 有什么区别？</h3>
