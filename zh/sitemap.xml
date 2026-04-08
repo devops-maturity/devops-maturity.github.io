@@ -37,5 +37,17 @@
                 hreflang="zh"
                 href="/zh/tags/"
                 />
+  </url><url>
+    <loc>/zh/enterprise/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/enterprise/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/enterprise/"
+                />
   </url>
 </urlset>

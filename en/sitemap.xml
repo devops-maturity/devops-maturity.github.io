@@ -28,6 +28,18 @@
                 href="/categories/"
                 />
   </url><url>
+    <loc>/enterprise/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/enterprise/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/enterprise/"
+                />
+  </url><url>
     <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
