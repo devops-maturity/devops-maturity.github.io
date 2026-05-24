@@ -87,6 +87,9 @@
 <h2 id="summary">Summary</h2>
 <h3 id="what-is-the-devops-maturity-specification">What is the DevOps Maturity Specification?</h3>
 <p>The DevOps Maturity Specification is a set of guidelines and criteria designed to help organizations assess and improve their DevOps practices. It provides a structured approach to evaluate key areas such as Basics, Quality, Security, Supply Chain Security, Analysis, and Reporting. The specification is intended to align with best practices and provide a framework for continuous improvement within the DevOps community.</p>
+<blockquote>
+<p><strong>Note:</strong> DevOps Maturity is a broad DevOps baseline assessment, not a replacement for specialized standards like <a href="https://slsa.dev/">SLSA</a> (supply-chain integrity) or <a href="https://securityscorecards.dev/">OpenSSF Scorecard</a> (open-source security health). For supply-chain-specific criteria, see the <a href="https://github.com/devops-maturity/spec/blob/main/MAPPING-SLSA.md">SLSA mapping</a>.</p>
+</blockquote>
 <h3 id="key-points">Key Points</h3>
 <ul>
 <li><strong>Purpose</strong>: Help organizations and teams assess DevOps practices, align on best practices, and drive continuous improvement.</li>
@@ -449,6 +452,8 @@
 <h2 id="faq">FAQ</h2>
 <h3 id="what-is-the-difference-between-openssf-best-practices-and-devops-maturity">What is the difference between OpenSSF Best Practices and DevOps Maturity?</h3>
 <p><a href="https://www.bestpractices.dev/">OpenSSF Best Practices</a> targets open source projects across the entire software development lifecycle, while DevOps Maturity focuses specifically on DevOps practices applicable to both open source and internal enterprise projects. DevOps Maturity provides both a web UI and a CLI for automatic maturity scoring. In contrast, OpenSSF Best Practices only offers a web-based SaaS and does not support internal deployment.</p>
+<h3 id="how-does-devops-maturity-relate-to-slsa">How does DevOps Maturity relate to SLSA?</h3>
+<p>DevOps Maturity does not replace SLSA — it complements it. SLSA is a specialized supply-chain integrity framework with rigorous attestation formats and verification rules. DevOps Maturity covers a wider surface: build, test, quality, security scanning, supply chain, analysis, and reporting. The supply-chain criteria (D4xx) map naturally to SLSA requirements, and teams can use DevOps Maturity as a first-step health check before pursuing deeper SLSA compliance. See the <a href="https://github.com/devops-maturity/spec/blob/main/MAPPING-SLSA.md">SLSA mapping</a> for details.</p>
 <h3 id="what-is-the-difference-between-devops-maturity-model-and-devops-maturity-specification">What is the difference between DevOps Maturity Model and DevOps Maturity Specification?</h3>
 <p>The DevOps Maturity Model is a conceptual framework that outlines the stages of DevOps adoption and maturity, while the DevOps Maturity Specification provides a detailed, actionable set of criteria and guidelines for assessing and improving DevOps practices.</p>
 <h3 id="how-can-i-contribute-to-the-devops-maturity-specification">How can I contribute to the DevOps Maturity Specification?</h3>
