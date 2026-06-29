@@ -99,6 +99,77 @@
 <li><strong>Tooling</strong>: Works with <a href="https://github.com/devops-maturity/devops-maturity">devops-maturity</a> to automate scoring via Web UI or CLI.</li>
 </ul>
 <hr>
+<h2 id="how-devops-maturity-compares">How DevOps Maturity Compares</h2>
+<p>DevOps Maturity is a <strong>breadth-first, automatable baseline</strong> for the whole delivery lifecycle. Most adjacent frameworks go deeper but narrower, or measure <em>outcomes</em> rather than <em>practices in place</em>. They are complements, not competitors.</p>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Primary focus</th>
+<th>Scope</th>
+<th>How you run it</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DevOps Maturity</strong></td>
+<td>DevOps <strong>practices &amp; controls</strong> in place</td>
+<td>Build, quality, security, supply chain, analysis, reporting</td>
+<td>CLI · Web UI · GitHub Action · YAML · AI auto-assess</td>
+<td>A fast, broad baseline + shareable badge for OSS <strong>and</strong> internal repos</td>
+</tr>
+<tr>
+<td><a href="https://dora.dev/">DORA metrics</a></td>
+<td>Delivery <strong>outcomes</strong></td>
+<td>Deploy frequency, lead time, MTTR, change-fail rate</td>
+<td>Telemetry from your pipeline</td>
+<td>Measuring delivery performance once practices exist</td>
+</tr>
+<tr>
+<td><a href="https://securityscorecards.dev/">OpenSSF Scorecard</a></td>
+<td>OSS security <strong>health</strong></td>
+<td>Repo-level security heuristics</td>
+<td>Automated checks</td>
+<td>Hardening the security posture of a public repo</td>
+</tr>
+<tr>
+<td><a href="https://www.bestpractices.dev/">OpenSSF Best Practices</a></td>
+<td>OSS best-practice <strong>badge</strong></td>
+<td>Whole SDLC, security-leaning</td>
+<td>Web SaaS self-attestation</td>
+<td>Earning a recognized OSS badge (SaaS only)</td>
+</tr>
+<tr>
+<td><a href="https://slsa.dev/">SLSA</a></td>
+<td>Supply-chain <strong>integrity</strong></td>
+<td>Build/source provenance &amp; attestation</td>
+<td>Attestation + verification</td>
+<td>Deep, verifiable supply-chain assurance</td>
+</tr>
+<tr>
+<td>Traditional maturity models (CMMI-style)</td>
+<td>Org <strong>process</strong> maturity</td>
+<td>Broad, process-heavy</td>
+<td>Consultant-led assessment</td>
+<td>Large-scale, audited process programs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-makes-it-different">What makes it different</h3>
+<ul>
+<li><strong>Breadth, not just security</strong> — covers testing, quality, analysis, and reporting, not only supply-chain/security.</li>
+<li><strong>Automatable end-to-end</strong> — machine-readable YAML in, JSON/badge out; drop the <a href="https://github.com/devops-maturity/devops-maturity-action">GitHub Action</a> into CI and the badge stays current on every change.</li>
+<li><strong>AI-powered auto-assessment</strong> — point it at a repo and an LLM infers the answers from README, CI config, and the file tree — no questionnaire required.</li>
+<li><strong>Yours to run</strong> — CLI or self-hostable web UI; works on private/internal repos, not just public OSS, with no SaaS lock-in.</li>
+</ul>
+<h3 id="when-to-use-which">When to use which</h3>
+<ul>
+<li>Start with <strong>DevOps Maturity</strong> for a quick, broad health check and a badge.</li>
+<li>Add <strong>DORA</strong> to track delivery <em>outcomes</em> over time.</li>
+<li>Layer <strong>OpenSSF Scorecard / SLSA</strong> for deeper security and supply-chain rigor once the D3xx/D4xx gaps are closed.</li>
+</ul>
+<hr>
 <h2 id="specification">Specification</h2>
 <table>
 <thead>
@@ -452,6 +523,10 @@
 <h2 id="faq">FAQ</h2>
 <h3 id="what-is-the-difference-between-openssf-best-practices-and-devops-maturity">What is the difference between OpenSSF Best Practices and DevOps Maturity?</h3>
 <p><a href="https://www.bestpractices.dev/">OpenSSF Best Practices</a> targets open source projects across the entire software development lifecycle, while DevOps Maturity focuses specifically on DevOps practices applicable to both open source and internal enterprise projects. DevOps Maturity provides both a web UI and a CLI for automatic maturity scoring. In contrast, OpenSSF Best Practices only offers a web-based SaaS and does not support internal deployment.</p>
+<h3 id="how-does-devops-maturity-relate-to-dora-metrics">How does DevOps Maturity relate to DORA metrics?</h3>
+<p>They answer different questions. <a href="https://dora.dev/">DORA metrics</a> measure delivery <em>outcomes</em> — how fast and how reliably you ship (deployment frequency, lead time, change-failure rate, time to restore). DevOps Maturity measures whether the <em>practices and controls</em> that produce those outcomes are actually in place. Use DevOps Maturity to find and close practice gaps, and DORA to track the performance results over time. They work well side by side.</p>
+<h3 id="how-does-devops-maturity-relate-to-openssf-scorecard">How does DevOps Maturity relate to OpenSSF Scorecard?</h3>
+<p><a href="https://securityscorecards.dev/">OpenSSF Scorecard</a> runs automated security-health checks on a repository and is focused on open-source security. DevOps Maturity is broader — it also covers testing, quality, analysis, and reporting — and works for internal/private projects, not only public OSS. Scorecard is a great way to deepen the security (D3xx) and supply-chain (D4xx) dimensions once a baseline is established.</p>
 <h3 id="how-does-devops-maturity-relate-to-slsa">How does DevOps Maturity relate to SLSA?</h3>
 <p>DevOps Maturity does not replace SLSA — it complements it. SLSA is a specialized supply-chain integrity framework with rigorous attestation formats and verification rules. DevOps Maturity covers a wider surface: build, test, quality, security scanning, supply chain, analysis, and reporting. The supply-chain criteria (D4xx) map naturally to SLSA requirements, and teams can use DevOps Maturity as a first-step health check before pursuing deeper SLSA compliance. See the <a href="https://github.com/devops-maturity/spec/blob/main/MAPPING-SLSA.md">SLSA mapping</a> for details.</p>
 <h3 id="what-is-the-difference-between-devops-maturity-model-and-devops-maturity-specification">What is the difference between DevOps Maturity Model and DevOps Maturity Specification?</h3>
